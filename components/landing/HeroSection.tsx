@@ -22,7 +22,7 @@ const BRAND_LOGOS = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-24 pb-16 px-4">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 sm:pt-24 pb-10 sm:pb-16 px-4 sm:px-6">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -37,7 +37,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
         {/* Badge pill */}
-        <div className="inline-flex items-center gap-2 bg-brand-dark-pill border border-brand-dark-border/60 rounded-full px-4 py-1.5 mb-8">
+        <div className="inline-flex items-center gap-2 bg-brand-dark-pill border border-brand-dark-border/60 rounded-full px-3 sm:px-4 py-1.5 mb-6 sm:mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-brand-accent" />
           <span className="text-xs font-medium text-brand-muted-blue font-manrope">
             Smart Finance Management
@@ -45,20 +45,20 @@ export default function HeroSection() {
         </div>
 
         {/* Headline */}
-        <h1 className="font-poppins font-semibold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight text-brand-near-white mb-6">
+        <h1 className="font-poppins font-semibold text-[2rem] sm:text-5xl lg:text-6xl xl:text-7xl leading-tight text-brand-near-white mb-4 sm:mb-6">
           Manage your finances{" "}
           <span className="gradient-text-accent">smarter</span>
           <br className="hidden sm:block" /> not harder
         </h1>
 
         {/* Subheadline */}
-        <p className="text-base sm:text-lg text-brand-gray-body font-manrope max-w-2xl mb-10 leading-relaxed">
+        <p className="text-sm sm:text-base lg:text-lg text-brand-gray-body font-manrope max-w-2xl mb-8 sm:mb-10 leading-relaxed">
           Track spending, manage investments, and achieve your financial goals
           with our intelligent platform designed for modern professionals.
         </p>
 
         {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row items-center gap-4 mb-16">
+        <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mb-10 sm:mb-16 w-full sm:w-auto">
           <Link
             href="#"
             className="w-full sm:w-auto bg-brand-accent hover:bg-brand-dark-blue text-white font-medium px-8 py-3.5 rounded-xl transition-colors duration-200 text-sm glow-accent"
@@ -87,20 +87,20 @@ export default function HeroSection() {
         </div>
 
         {/* Brand logos ticker */}
-        <div className="mt-16 w-full">
-          <p className="text-xs text-brand-body-alt font-manrope uppercase tracking-widest mb-6">
+        <div className="mt-10 sm:mt-16 w-full">
+          <p className="text-xs text-brand-body-alt font-manrope uppercase tracking-widest mb-4 sm:mb-6">
             Trusted by teams at
           </p>
           <div className="relative overflow-hidden pause-on-hover">
             {/* Fade edges */}
-            <div className="absolute left-0 top-0 bottom-0 w-16 z-10 bg-gradient-to-r from-brand-page-bg to-transparent pointer-events-none" />
-            <div className="absolute right-0 top-0 bottom-0 w-16 z-10 bg-gradient-to-l from-brand-page-bg to-transparent pointer-events-none" />
+            <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-r from-brand-page-bg to-transparent pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-l from-brand-page-bg to-transparent pointer-events-none" />
 
-            <div className="flex gap-12 animate-marquee-slow whitespace-nowrap">
+            <div className="flex gap-8 sm:gap-12 animate-marquee-slow whitespace-nowrap">
               {[...BRAND_LOGOS, ...BRAND_LOGOS].map((logo, i) => (
                 <div
                   key={`${logo.id}-${i}`}
-                  className="flex-shrink-0 h-8 w-24 relative grayscale opacity-50 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
+                  className="flex-shrink-0 h-7 sm:h-8 w-20 sm:w-24 relative grayscale opacity-50 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
                 >
                   <Image
                     src={`https://proxy.extractcss.dev/https://framerusercontent.com/images/${logo.id}`}
