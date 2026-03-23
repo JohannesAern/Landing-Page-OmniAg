@@ -1,119 +1,145 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const BRAND_LOGOS = [
+const FEATURES = [
   {
-    id: "njR4vc3CneMWk2Hb2Fssp9pHTbk",
-    alt: "Brand partner 1",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-8 h-8">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.5l4-4 4 4 4-6 4 4" />
+        <rect x="2" y="3" width="20" height="18" rx="2" strokeLinecap="round" />
+      </svg>
+    ),
+    title: "Real-time insights",
+    description:
+      "Track your spending and investments live. Our dashboard updates instantly so you're always in control.",
   },
   {
-    id: "wWb4slCaOduEWAivmJFstMjx6qc",
-    alt: "Brand partner 2",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-8 h-8">
+        <circle cx="12" cy="12" r="9" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 3" />
+      </svg>
+    ),
+    title: "Set up in minutes",
+    description:
+      "Connect your accounts and get a full financial overview in under 5 minutes. No manual data entry.",
   },
   {
-    id: "Y6yn57fYB15aSbFBhmwqiOzQrQ",
-    alt: "Brand partner 3",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-8 h-8">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1M4.22 4.22l.707.707m12.728 12.728.707.707M3 12H4m16 0h1M4.22 19.78l.707-.707M18.364 5.636l.707-.707" />
+        <circle cx="12" cy="12" r="4" />
+      </svg>
+    ),
+    title: "Free to get started",
+    description:
+      "Our 14-day trial gives you full access to every feature. No credit card required, no hidden fees.",
+  },
+] as const;
+
+const HOW_IT_WORKS = [
+  {
+    step: 1,
+    title: "Connect your accounts",
+    description: "Link your bank, credit cards, and investment accounts securely in seconds.",
   },
   {
-    id: "lo3NQV5s300QS0DSSxciQNNYAw",
-    alt: "Brand partner 4",
+    step: 2,
+    title: "Get your full picture",
+    description: "OmniAg automatically categorises transactions and builds your financial dashboard.",
+  },
+  {
+    step: 3,
+    title: "Reach your goals",
+    description: "Set savings targets, track progress, and let smart alerts keep you on track.",
   },
 ] as const;
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 sm:pt-24 pb-10 sm:pb-16 px-4 sm:px-6">
-      {/* Background image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="https://proxy.extractcss.dev/https://framerusercontent.com/images/fGcjZ99aH15nOvlG5HEMNGs4ro.png"
-          alt=""
-          fill
-          priority
-          className="object-cover object-top opacity-10"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-page-bg/60 via-brand-page-bg/40 to-brand-page-bg" />
-      </div>
-
-      <div className="relative z-10 flex flex-col items-center text-center w-full max-w-4xl mx-auto">
-        {/* Badge pill */}
-        <div className="inline-flex items-center gap-2 bg-brand-dark-pill border border-brand-dark-border/60 rounded-full px-3 sm:px-4 py-1.5 mb-6 sm:mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-brand-accent" />
-          <span className="text-xs font-medium text-brand-muted-blue font-manrope">
-            Smart Finance Management
-          </span>
-        </div>
-
-        {/* Headline */}
-        <h1 className="font-poppins font-semibold text-[2rem] sm:text-5xl lg:text-6xl xl:text-7xl leading-tight text-brand-near-white mb-4 sm:mb-6">
-          Manage your finances{" "}
-          <span className="gradient-text-accent">smarter</span>
-          <br className="hidden sm:block" /> not harder
-        </h1>
-
-        {/* Subheadline */}
-        <p className="text-sm sm:text-base lg:text-lg text-brand-gray-body font-manrope max-w-2xl mb-8 sm:mb-10 leading-relaxed">
-          Track spending, manage investments, and achieve your financial goals
-          with our intelligent platform designed for modern professionals.
-        </p>
-
-        {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mb-10 sm:mb-16 w-full sm:w-auto">
-          <Link
-            href="#"
-            className="w-full sm:w-auto bg-brand-accent hover:bg-brand-dark-blue text-white font-medium px-8 py-3.5 rounded-xl transition-colors duration-200 text-sm glow-accent"
-          >
-            Get started free
-          </Link>
-          <Link
-            href="#"
-            className="w-full sm:w-auto border border-brand-dark-border/60 text-brand-near-white hover:bg-brand-dark-card font-medium px-8 py-3.5 rounded-xl transition-colors duration-200 text-sm"
-          >
-            View demo
-          </Link>
-        </div>
-
-        {/* App mockup */}
-        <div className="relative w-full max-w-2xl mx-auto">
+    <>
+      {/* ── Hero ── */}
+      <section className="relative w-full min-h-[520px] sm:min-h-[600px] flex flex-col justify-end overflow-hidden pt-20">
+        {/* Background photo */}
+        <div className="absolute inset-0 z-0">
           <Image
-            src="https://proxy.extractcss.dev/https://framerusercontent.com/images/L06kDydSsKJ8LId4Ou11xQiWas.png"
-            alt="OmniAg app mockup"
-            width={800}
-            height={600}
-            className="w-full h-auto rounded-2xl"
+            src="https://proxy.extractcss.dev/https://framerusercontent.com/images/fGcjZ99aH15nOvlG5HEMNGs4ro.png"
+            alt=""
+            fill
             priority
+            className="object-cover object-center"
           />
-          <div className="absolute inset-0 rounded-2xl ring-1 ring-brand-dark-border/40" />
+          {/* Blue-gray tinted overlay, darker at bottom */}
+          <div className="absolute inset-0 bg-[#1a2e4a]/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40" />
         </div>
 
-        {/* Brand logos ticker */}
-        <div className="mt-10 sm:mt-16 w-full">
-          <p className="text-xs text-brand-body-alt font-manrope uppercase tracking-widest mb-4 sm:mb-6">
-            Trusted by teams at
-          </p>
-          <div className="relative overflow-hidden pause-on-hover">
-            {/* Fade edges */}
-            <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-r from-brand-page-bg to-transparent pointer-events-none" />
-            <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 z-10 bg-gradient-to-l from-brand-page-bg to-transparent pointer-events-none" />
-
-            <div className="flex gap-8 sm:gap-12 animate-marquee-slow whitespace-nowrap">
-              {[...BRAND_LOGOS, ...BRAND_LOGOS].map((logo, i) => (
-                <div
-                  key={`${logo.id}-${i}`}
-                  className="flex-shrink-0 h-7 sm:h-8 w-20 sm:w-24 relative grayscale opacity-50 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
-                >
-                  <Image
-                    src={`https://proxy.extractcss.dev/https://framerusercontent.com/images/${logo.id}`}
-                    alt={logo.alt}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              ))}
-            </div>
+        {/* Content */}
+        <div className="relative z-10 max-w-5xl mx-auto w-full px-6 sm:px-8 pb-14 sm:pb-20">
+          <div className="max-w-xl">
+            <h1 className="font-poppins font-semibold text-3xl sm:text-5xl leading-tight text-white mb-4">
+              Manage your finances smarter.
+            </h1>
+            <p className="text-sm sm:text-base text-white/80 font-manrope leading-relaxed mb-8 max-w-md">
+              We help you take control of spending, investments, and savings.
+              Connect your accounts and get a personalised financial plan — free
+              for 14 days.
+            </p>
+            <Link
+              href="#"
+              className="inline-block bg-brand-accent hover:bg-brand-dark-blue text-white font-semibold text-sm uppercase tracking-wider px-8 py-3.5 rounded transition-colors duration-200"
+            >
+              Get started free
+            </Link>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* ── 3 Features ── */}
+      <section className="bg-white border-b border-gray-100">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-12 sm:py-16 grid grid-cols-1 sm:grid-cols-3 gap-10">
+          {FEATURES.map((f) => (
+            <div key={f.title} className="flex flex-col gap-3">
+              <div className="text-brand-accent">{f.icon}</div>
+              <h3 className="font-poppins font-semibold text-[#1A1A1A] text-base">
+                {f.title}
+              </h3>
+              <p className="text-sm text-gray-500 font-manrope leading-relaxed">
+                {f.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── How it works ── */}
+      <section className="bg-white">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-14 sm:py-20">
+          <h2 className="font-poppins font-semibold text-2xl sm:text-3xl text-center text-brand-accent mb-12">
+            This is how it works
+          </h2>
+
+          {/* Steps timeline */}
+          <div className="relative grid grid-cols-1 sm:grid-cols-3 gap-10">
+            {/* Connecting line (desktop only) */}
+            <div className="hidden sm:block absolute top-5 left-[calc(16.66%+1px)] right-[calc(16.66%+1px)] h-0.5 bg-amber-400" />
+
+            {HOW_IT_WORKS.map((s) => (
+              <div key={s.step} className="flex flex-col items-center text-center gap-4">
+                <div className="relative z-10 w-10 h-10 rounded-full bg-amber-400 flex items-center justify-center font-poppins font-bold text-white text-base shrink-0">
+                  {s.step}
+                </div>
+                <h3 className="font-poppins font-semibold text-[#1A1A1A] text-base">
+                  {s.title}
+                </h3>
+                <p className="text-sm text-gray-500 font-manrope leading-relaxed max-w-[220px]">
+                  {s.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
