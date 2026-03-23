@@ -107,7 +107,7 @@ export default function IntegrationSection() {
               accounting software, payment processors, and notification systems
               — so nothing falls through the cracks.
             </p>
-            <button className="text-sm font-medium text-brand-accent hover:text-white border border-brand-accent/30 hover:border-brand-accent px-6 py-2.5 rounded-xl transition-all duration-200">
+            <button className="text-sm font-medium text-brand-accent hover:bg-brand-accent hover:text-white border border-brand-accent/30 hover:border-brand-accent px-6 py-2.5 rounded-xl transition-all duration-200">
               View all integrations
             </button>
           </div>

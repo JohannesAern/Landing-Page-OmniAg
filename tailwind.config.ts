@@ -9,21 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Framer design tokens mapped to named colors
-        "brand-near-white": "#f2f9fe",   // --token-43315af6
-        "brand-light-gray": "#f4f6fa",   // --token-da436d05
-        "brand-pale-blue": "#dee8f6",    // --token-adf7f60c
-        "brand-muted-blue": "#cad4e3",   // --token-08abdfee
-        "brand-gray-body": "#828e9d",    // --token-f191b7e0
-        "brand-dark-border": "#3d4045",  // --token-da4073a9
-        "brand-dark-pill": "#181e26",    // --token-a593d7d5
-        "brand-dark-navy": "#212a40",    // --token-c049abf4
-        "brand-dark-card": "#1b1f26",    // --token-7d3df988
-        "brand-page-bg": "#070c14",      // --token-3854456b
-        "brand-card-bg": "#14161e",      // --token-c7fa0745
-        "brand-body-alt": "#485e79",     // --token-b32213de
-        "brand-accent": "#1f78ff",       // --token-28d52507
-        "brand-dark-blue": "#0657d0",    // --token-4734062f
+        "brand-near-white": "#1A1A1A",   // main text (dark on light bg)
+        "brand-light-gray": "#F2F2F0",   // support background
+        "brand-pale-blue": "#e8eef8",    // light blue tint
+        "brand-muted-blue": "#1A1A1A",   // body text
+        "brand-gray-body": "#a1a0a0",    // secondary text
+        "brand-dark-border": "#a1a0a0",  // border color
+        "brand-dark-pill": "#F2F2F0",    // pill/badge background
+        "brand-dark-navy": "#013496",    // primary blue
+        "brand-dark-card": "#e8e8e8",    // card hover
+        "brand-page-bg": "#FFFFFF",      // page background
+        "brand-card-bg": "#F2F2F0",      // card background
+        "brand-body-alt": "#a1a0a0",     // tertiary text
+        "brand-accent": "#013496",       // primary blue
+        "brand-dark-blue": "#012070",    // primary hover
       },
       fontFamily: {
         poppins: ["Poppins", "system-ui", "sans-serif"],

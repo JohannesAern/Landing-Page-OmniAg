@@ -123,7 +123,7 @@ export default function BlogSection() {
           </div>
           <Link
             href="#"
-            className="text-sm font-medium text-brand-accent hover:text-white border border-brand-accent/30 hover:border-brand-accent px-5 py-2.5 rounded-xl transition-all duration-200 whitespace-nowrap"
+            className="text-sm font-medium text-brand-accent hover:bg-brand-accent hover:text-white border border-brand-accent/30 hover:border-brand-accent px-5 py-2.5 rounded-xl transition-all duration-200 whitespace-nowrap"
           >
             View all posts
           </Link>

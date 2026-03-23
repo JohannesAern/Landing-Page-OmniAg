@@ -17,8 +17,8 @@
   }
 
   body {
-    background-color: #070c14;
-    color: #f2f9fe;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
     font-family: 'Manrope', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -49,7 +49,7 @@
 
 /* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #f2f9fe 0%, #828e9d 100%);
+  background: linear-gradient(135deg, #013496 0%, #a1a0a0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -57,7 +57,7 @@
 
 /* Accent gradient text */
 .gradient-text-accent {
-  background: linear-gradient(135deg, #1f78ff 0%, #0657d0 100%);
+  background: linear-gradient(135deg, #013496 0%, #012070 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -65,12 +65,12 @@
 
 /* Glow effect for accent elements */
 .glow-accent {
-  box-shadow: 0 0 40px rgba(31, 120, 255, 0.3);
+  box-shadow: 0 4px 24px rgba(1, 52, 150, 0.25);
 }
 
 /* Card border gradient */
 .card-border {
-  border: 1px solid rgba(61, 64, 69, 0.6);
+  border: 1px solid rgba(161, 160, 160, 0.6);
 }
 
 /* Scrollbar hide */
