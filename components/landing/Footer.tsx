@@ -90,9 +90,13 @@ export default function Footer() {
                 height={28}
                 className="w-7 h-7"
               />
-              <span className="font-poppins font-semibold text-brand-near-white text-sm">
-                OmniAg
-              </span>
+              <Image
+                src="/omniag-nome.svg"
+                alt="OmniAg"
+                width={70}
+                height={17}
+                className="h-4 w-auto"
+              />
             </Link>
             <p className="text-xs text-brand-body-alt font-manrope leading-relaxed max-w-[180px]">
               Smart finance management for modern professionals.

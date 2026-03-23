@@ -32,9 +32,13 @@ export default function Navbar() {
             height={32}
             className="w-8 h-8"
           />
-          <span className="font-poppins font-semibold text-brand-near-white text-base">
-            OmniAg
-          </span>
+          <Image
+            src="/omniag-nome.svg"
+            alt="OmniAg"
+            width={80}
+            height={19}
+            className="h-5 w-auto"
+          />
         </Link>
 
         {/* Desktop nav links */}
