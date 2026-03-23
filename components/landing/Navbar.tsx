@@ -26,7 +26,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <Image
-            src="https://proxy.extractcss.dev/https://framerusercontent.com/images/AGPkgX5dQJGUFEV0yyQmnbMZsrw.svg"
+            src="/omniag-logo.svg"
             alt="OmniAg logo"
             width={32}
             height={32}

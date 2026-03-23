@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <!-- OmniAg circular aperture logo icon -->
+  <g transform="translate(80, 80)">
+
+    <!-- Outer blue ring with aperture/swirl blades -->
+    <!-- Main blue circular segments -->
+    <path d="
+      M0,-72
+      A72,72 0 0,1 62.4,-36
+      L36,-20
+      A42,42 0 0,0 0,-42
+      Z
+    " fill="#1e3a8a"/>
+
+    <path d="
+      M62.4,-36
+      A72,72 0 0,1 72,0
+      L42,0
+      A42,42 0 0,0 36,-20
+      Z
+    " fill="#1e3a8a"/>
+
+    <path d="
+      M72,0
+      A72,72 0 0,1 36,62.4
+      L20,36
+      A42,42 0 0,0 42,0
+      Z
+    " fill="#1e3a8a"/>
+
+    <path d="
+      M36,62.4
+      A72,72 0 0,1 -36,62.4
+      L-20,36
+      A42,42 0 0,0 20,36
+      Z
+    " fill="#1e3a8a"/>
+
+    <path d="
+      M-36,62.4
+      A72,72 0 0,1 -72,0
+      L-42,0
+      A42,42 0 0,0 -20,36
+      Z
+    " fill="#1e3a8a"/>
+
+    <path d="
+      M-72,0
+      A72,72 0 0,1 -62.4,-36
+      L-36,-20
+      A42,42 0 0,0 -42,0
+      Z
+    " fill="#1e3a8a"/>
+
+    <path d="
+      M-62.4,-36
+      A72,72 0 0,1 0,-72
+      L0,-42
+      A42,42 0 0,0 -36,-20
+      Z
+    " fill="#1e3a8a"/>
+
+    <!-- White swirl cuts (aperture blades gaps) -->
+    <path d="M0,-72 C20,-50 42,-30 42,0 L36,-4 C36,-26 16,-46 0,-64 Z" fill="white"/>
+    <path d="M62.4,-36 C45,0 36,32 36,62.4 L30,58 C30,28 38,-2 56,-38 Z" fill="white"/>
+    <path d="M-62.4,-36 C-45,0 -36,32 -36,62.4 L-30,58 C-30,28 -38,-2 -56,-38 Z" fill="white"/>
+
+    <!-- Inner circle background (lighter area) -->
+    <circle cx="0" cy="0" r="40" fill="#dce5f5"/>
+
+    <!-- Gray plant/leaf icon in center -->
+    <!-- Left leaf -->
+    <path d="M-3,12 C-18,-8 -12,-30 0,-18 C-3,-10 -4,0 -3,12 Z" fill="#8496ad"/>
+    <!-- Right leaf -->
+    <path d="M3,12 C18,-8 12,-30 0,-18 C3,-10 4,0 3,12 Z" fill="#6b7d96"/>
+    <!-- Curved base/ground -->
+    <path d="M-14,18 Q0,8 14,18 Q8,14 0,14 Q-8,14 -14,18 Z" fill="#8496ad"/>
+    <!-- Stem -->
+    <line x1="0" y1="12" x2="0" y2="18" stroke="#8496ad" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

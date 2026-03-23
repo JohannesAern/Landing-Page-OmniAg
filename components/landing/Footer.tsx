@@ -84,7 +84,7 @@ export default function Footer() {
           <div className="col-span-2 sm:col-span-3 lg:col-span-1 flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2 w-fit">
               <Image
-                src="https://proxy.extractcss.dev/https://framerusercontent.com/images/AGPkgX5dQJGUFEV0yyQmnbMZsrw.svg"
+                src="/omniag-logo.svg"
                 alt="OmniAg logo"
                 width={28}
                 height={28}
