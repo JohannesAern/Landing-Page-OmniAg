@@ -30,9 +30,9 @@ export default function HeroSection() {
           alt=""
           fill
           priority
-          className="object-cover object-top opacity-60"
+          className="object-cover object-top opacity-10"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-page-bg/20 via-transparent to-brand-page-bg" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-page-bg/60 via-brand-page-bg/40 to-brand-page-bg" />
       </div>
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
