@@ -15,11 +15,11 @@ const config: Config = {
         "brand-muted-blue": "#1A1A1A",   // body text
         "brand-gray-body": "#a1a0a0",    // secondary text
         "brand-dark-border": "#a1a0a0",  // border color
-        "brand-dark-pill": "#F2F2F0",    // pill/badge background
+        "brand-dark-pill": "#FFFFFF",    // pill/badge background
         "brand-dark-navy": "#013496",    // primary blue
         "brand-dark-card": "#e8e8e8",    // card hover
-        "brand-page-bg": "#FFFFFF",      // page background
-        "brand-card-bg": "#F2F2F0",      // card background
+        "brand-page-bg": "#F2F2F0",      // page background
+        "brand-card-bg": "#FFFFFF",      // card background
         "brand-body-alt": "#a1a0a0",     // tertiary text
         "brand-accent": "#013496",       // primary blue
         "brand-dark-blue": "#012070",    // primary hover
