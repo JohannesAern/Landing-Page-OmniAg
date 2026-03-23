@@ -22,7 +22,7 @@ const BRAND_LOGOS = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 sm:pt-24 pb-10 sm:pb-16 px-4 sm:px-6">
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 sm:pt-24 pb-10 sm:pb-16 px-4 sm:px-6">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -35,7 +35,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-page-bg/60 via-brand-page-bg/40 to-brand-page-bg" />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center text-center w-full max-w-4xl mx-auto">
         {/* Badge pill */}
         <div className="inline-flex items-center gap-2 bg-brand-dark-pill border border-brand-dark-border/60 rounded-full px-3 sm:px-4 py-1.5 mb-6 sm:mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-brand-accent" />
