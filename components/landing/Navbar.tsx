@@ -26,15 +26,19 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <Image
-            src="https://proxy.extractcss.dev/https://framerusercontent.com/images/AGPkgX5dQJGUFEV0yyQmnbMZsrw.svg"
+            src="/omniag-logo.svg"
             alt="OmniAg logo"
             width={32}
             height={32}
             className="w-8 h-8"
           />
-          <span className="font-poppins font-semibold text-brand-near-white text-base">
-            OmniAg
-          </span>
+          <Image
+            src="/omniag-nome.svg"
+            alt="OmniAg"
+            width={80}
+            height={19}
+            className="h-5 w-auto"
+          />
         </Link>
 
         {/* Desktop nav links */}

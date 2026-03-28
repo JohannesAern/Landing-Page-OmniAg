@@ -84,15 +84,19 @@ export default function Footer() {
           <div className="col-span-2 sm:col-span-3 lg:col-span-1 flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2 w-fit">
               <Image
-                src="https://proxy.extractcss.dev/https://framerusercontent.com/images/AGPkgX5dQJGUFEV0yyQmnbMZsrw.svg"
+                src="/omniag-logo.svg"
                 alt="OmniAg logo"
                 width={28}
                 height={28}
                 className="w-7 h-7"
               />
-              <span className="font-poppins font-semibold text-brand-near-white text-sm">
-                OmniAg
-              </span>
+              <Image
+                src="/omniag-nome.svg"
+                alt="OmniAg"
+                width={70}
+                height={17}
+                className="h-4 w-auto"
+              />
             </Link>
             <p className="text-xs text-brand-body-alt font-manrope leading-relaxed max-w-[180px]">
               Smart finance management for modern professionals.
