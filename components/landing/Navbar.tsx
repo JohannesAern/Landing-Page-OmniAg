@@ -35,8 +35,8 @@ export default function Navbar() {
           <Image
             src="/omniag-nome.svg"
             alt="OmniAg"
-            width={80}
-            height={19}
+            width={90}
+            height={21}
             className="h-5 w-auto"
           />
         </Link>

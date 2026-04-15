@@ -93,8 +93,8 @@ export default function Footer() {
               <Image
                 src="/omniag-nome.svg"
                 alt="OmniAg"
-                width={70}
-                height={17}
+                width={80}
+                height={19}
                 className="h-4 w-auto"
               />
             </Link>
